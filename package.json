@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.19",
+    "flowbite": "^2.3.0",
     "tailwind": "^4.0.0"
   }
 }
