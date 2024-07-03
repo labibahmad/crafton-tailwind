@@ -53,19 +53,15 @@
 
         <!--nav-->
         
-        
-
-
-
         <nav class="bg-gray-400 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2.5">
                 <a href="#" class="flex  space-x-3 rtl:space-x-reverse">
-                    <span class="text-black">
+                    <!--<span class="text-black">
                         <i class="fas fa-bars"></i>
                     </span>
-                    <span>
+                    <span>-->
                         <ul>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex text-1xl items-center w-full md:hover:text-blue-700">All Categories <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center w-full md:hover:text-blue-700">All Categories <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor"  stroke-width="2" d="m1 1 4 4 4-4"/>
                   </svg></button>
                             <!-- Dropdown menu -->
@@ -99,11 +95,11 @@
               <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                 <ul class="flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:text-sm  md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-8 md:rtl:space-x-reverse">
                   <li>
-                    <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+                    <a href="index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
                   </li>
                   
                   <li>
-                    <a href="#" class="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                    <a href="shop.html" class="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Shop</a>
                   </li>
                   <li>
                     <a href="#" class="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
@@ -151,15 +147,67 @@
             </div>
 
             
-            <!--categories
-            <div class="container">
+            <!--categories-->
+
+            <div class="container mt-10">
+              <h2 class="text-3xl text-gray-400 mb-6">Shop by Category</h2>
               <div class="grid grid-cols-3 gap-3">
                 <div class="relative rounded-sm overflow-hidden">
                   <img src="./category/category-1.jpg" class="w-full">
+                  <a href="#" class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"></a>
+                </div>
+
+                <div class="relative rounded-sm overflow-hidden">
+                  <img src="./category/category-1.jpg" class="w-full">
+                  <a href="#" class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"></a>
                 </div>
               </div>
-            </div>-->
 
+              <div class="grid grid-cols-3 gap-3">
+                <div class="relative rounded-sm overflow-hidden">
+                  <img src="./category/category-1.jpg" class="w-full">
+                  <a href="#" class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"></a>
+                </div>
+
+                <div class="relative rounded-sm overflow-hidden">
+                  <img src="./category/category-1.jpg" class="w-full">
+                  <a href="#" class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"></a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="container">
+              <h2 class="text-2xl">New</h2>
+
+              <!--product list-->
+              <div class="grid grid-cols-4 gap-6">
+                <div class="bg-white shadow rounded">
+                  <div class="relative">
+                    <img src="./products/product9.jpg" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center gap-3">
+                      <a href="#" class="text-white text-lg w-10 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-heart"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!--Product details-->
+                  <div class="">
+                    <a href="">
+                      <h4 class="text-xl mb-4 mx-4 text-gray-800 hover:text-primary transition">Chair</h4>
+                    </a>
+                    <div class="flex items-center mb-1 space-x-2">
+                      <p class="text-xl mx-4 text-primary font-semibold">$50</p>
+                    </div>
+                  </div>
+
+                  <a href="#" class="block w-full text-center text-white bg-primary border-primary hover:bg-transparent hover:text-primary transition">Add</a>
+
+                </div>
+                </div>
+              </div>
+            </div>
 
 
     </header>
