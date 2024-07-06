@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>-->
@@ -102,7 +102,7 @@
                     <a href="shop.html" class="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Shop</a>
                   </li>
                   <li>
-                    <a href="#" class="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                    <a href="view.html" class="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
                   </li>
                   <li>
                     <a href="#" class="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
@@ -113,7 +113,7 @@
           </nav>
         
           <!--page link icon-->
-        <div class="container flex items-center">
+          <div class="container flex items-center">
             <a href="index.html" class="text-primary">
                 <i class="fas fa-home"></i>
             </a>
@@ -165,8 +165,46 @@
                     </div>
                 </div>
             </div>
+
             <!--products-->
-            <div class="col-span-3"></div>
+            <div class="container col-span-3">
+              <select class="w-44 text-gray-400 px-4 py-3 border-gray-800 focus:ring-primary focus:border-primary">
+                <option>Default</option>
+                <option>Default</option>
+                <option>Default</option>
+              </select>
+            
+              <div class="container">
+                <h2 class="text-2xl">New</h2>
+  
+                
+                <div class="grid grid-cols-4 gap-6">
+                  <div class="bg-white shadow rounded">
+                    <div class="relative">
+                      <img src="./products/product9.jpg" class="w-full">
+                      <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center gap-3">
+                        <a href="#" class="text-white text-lg w-10 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                          <i class="fas fa-heart"></i>
+                        </a>
+                      </div>
+                    </div>
+  
+                    <!--Product details-->
+                    <div class="">
+                      <a href="">
+                        <h4 class="text-xl mb-4 mx-4 text-gray-800 hover:text-primary transition">Chair</h4>
+                      </a>
+                      <div class="flex items-center mb-1 space-x-2">
+                        <p class="text-xl mx-4 text-primary font-semibold">$50</p>
+                      </div>
+                    </div>
+  
+                    <a href="#" class="block w-full text-center text-white bg-primary border-primary hover:bg-transparent hover:text-primary transition">Add</a>
+  
+                  </div>
+                  </div>
+                </div>
+            </div>
         </div>
 
         </header>
