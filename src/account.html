@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Accounts</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>-->
@@ -49,6 +49,113 @@
     </header>
 
     <!--account wrapper-->
-    <div class="container grid grid-cols-12 items-start">
+    <div class="container grid grid-cols-8 items-start pt-4 pb-16  gap-6 ">
         <!--sidebar-->
+        <div class="col-span-3">
+            <!--profile-->
+            <div class="flex items-center p-4 bg-gray-100 rounded shadow-md max-w-sm mx-auto">
+                <div class="w-16 h-16 mr-4">
+                    <img src="./avatar.jpg" class="rounded-full w-14 h-14 border-gray-300 p-1 object-cover">
+                </div>
+                
+                <div class="">
+                    <p class="">Hello,</p>
+                    <h4 class="">Mr. Ahmad </h4>
+                </div>
+            </div>
+
+            <!--profile links-->
+            <nav>
+                <ul class="space-y-2">
+                  <li>
+                    <h2 class="text-red-600 font-semibold mb-2">Manage Account</h2>
+                    <ul class="pl-4 space-y-1">
+                      <li><a href="#" class="text-gray-700 hover:text-gray-900">Profile Information</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-gray-900">Manage Address</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-gray-900">Change Password</a></li>
+                    </ul>
+                  </li>
+                  <li class="border-t border-gray-900 pt-4" >
+                    <h2 class="text-gray-800 font-semibold flex items-center">
+                      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                      </svg>
+                      My Order History
+                    </h2>
+                    <ul class="pl-7 space-y-1">
+                      <li><a href="#" class="text-gray-700 hover:text-gray-900">My Returns</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-gray-900">My Cancellations</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-gray-900">My Reviews</a></li>
+                    </ul>
+                  </li>
+
+
+
+            <!--<div class="container mt-6 flex flex-col p-4 bg-gray-100 rounded shadow-md max-w-sm mx-auto ">
+                <div class="mb-4 flex flex-col divide-y divide-gray-900 w-full">
+                    <a href="#" class="relative block hover:text-primary">Manage Account</a>
+                    <a href="#" class="relative block">Information</a>
+                </div>
+
+                <div class=" divide-gray-500">
+                    <a href="#" class="relative block ">Manage Account</a>
+                    <a href="#" class="relative block ">Manage Account</a>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+    <div class="bg-gray-100 p-4 w-64 shadow-md">
+        <nav>
+          <ul class="space-y-2">
+            <li>
+              <h2 class="text-red-600 font-semibold mb-2">Manage Account</h2>
+              <ul class="pl-4 space-y-1">
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">Profile Information</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">Manage Address</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">Change Password</a></li>
+              </ul>
+            </li>
+            <li class="border-t border-gray-900 pt-4" >
+              <h2 class="text-gray-800 font-semibold flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                </svg>
+                My Order History
+              </h2>
+              <ul class="pl-7 space-y-1">
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">My Returns</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">My Cancellations</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">My Reviews</a></li>
+              </ul>
+            </li>
+            <li>
+              <h2 class="text-gray-800 font-semibold flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                </svg>
+                Payment Methods
+              </h2>
+              <ul class="pl-7 space-y-1">
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">Voucher</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 font-semibold flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                </svg>
+                My Wishlist
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 font-semibold flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                </svg>
+                Logout
+              </a>
+            </li>
+          </ul>
+        </nav>
     </div>
