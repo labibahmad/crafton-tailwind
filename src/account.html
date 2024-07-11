@@ -49,64 +49,58 @@
     </header>
 
     <!--account wrapper-->
-    <div class="container grid grid-cols-8 items-start pt-4 pb-16  gap-6 ">
-        <!--sidebar-->
-        <div class="col-span-3">
-            <!--profile-->
-            <div class="flex flex-col items-start p-4 bg-gray-100 rounded shadow-md max-w-sm mx-auto">
-                <div class="w-16 h-16 mr-4">
-                    <img src="./avatar.jpg" class="rounded-full w-14 h-14 border-gray-300 p-1 object-cover">
-                </div>
-                
-                <div class="">
-                    <p class="">Hello,</p>
-                    <h4 class="">Mr. Ahmad </h4>
-                </div>
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row gap-6 pt-4 pb-16">
+        <!-- Sidebar -->
+        <div class="w-full md:w-1/4">
+          <div class="bg-gray-100 rounded shadow-md p-4">
+            <!-- Profile section -->
+            <div class="flex items-center mb-4 pb-4 border-b border-gray-300">
+              <img src="./avatar.jpg" class="rounded-full w-14 h-14 border border-gray-300 p-1 object-cover mr-3">
+              <div>
+                <p class="text-sm">Hello,</p>
+                <h4 class="font-semibold">Mr. Ahmad</h4>
               </div>
-
-
-              <!--profile links-->
-              <div class="flex flex-col items-center p-4 bg-gray-100 rounded shadow-md max-w-sm mx-auto">
-              <nav class="w-full mt-4">
+            </div>
+            
+            <!-- Navigation -->
+            <nav>
               <ul class="space-y-4">
                 <li>
                   <h2 class="text-red-600 font-semibold mb-2">Manage Account</h2>
-                  <ul class="space-y-1">
+                  <ul class="space-y-2 text-sm">
                     <li><a href="#" class="text-gray-700 hover:text-gray-900">Profile Information</a></li>
                     <li><a href="#" class="text-gray-700 hover:text-gray-900">Manage Address</a></li>
                     <li><a href="#" class="text-gray-700 hover:text-gray-900">Change Password</a></li>
                   </ul>
                 </li>
-                <li class="border-t border-gray-900 pt-4" >
+                <li class="pt-4">
                   <h2 class="text-gray-800 font-semibold flex items-center">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
                     </svg>
                     My Order History
                   </h2>
-                  <ul class="mt-2 space-y-1">
+                  <ul class="mt-2 space-y-2 text-sm">
                     <li><a href="#" class="text-gray-700 hover:text-gray-900">My Returns</a></li>
                     <li><a href="#" class="text-gray-700 hover:text-gray-900">My Cancellations</a></li>
                     <li><a href="#" class="text-gray-700 hover:text-gray-900">My Reviews</a></li>
                   </ul>
                 </li>
-                </ul>
-              </nav>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    
+        <!-- Personal Details -->
+        <div class="w-full md:w-1/4">
+          <div class="bg-white rounded shadow-md p-6">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-lg font-semibold text-gray-700">Personal Details</h3>
+              <a href="#" class="text-blue-600 hover:text-blue-800">EDIT</a>
             </div>
-
-          <!--<div class="container mt-6 flex flex-col p-4 bg-gray-100 rounded shadow-md max-w-sm mx-auto ">
-              <div class="mb-4 flex flex-col divide-y divide-gray-900 w-full">
-                  <a href="#" class="relative block hover:text-primary">Manage Account</a>
-                  <a href="#" class="relative block">Information</a>
-              </div>
-
-              <div class=" divide-gray-500">
-                  <a href="#" class="relative block ">Manage Account</a>
-                  <a href="#" class="relative block ">Manage Account</a>
-              </div>
-          </div>-->
+            <!-- Add more content for personal details here -->
+          </div>
+        </div>
       </div>
-
-      <!--card-->
-      <div class=""></div>
     </div>
